@@ -13,7 +13,7 @@ nav
 {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color: lightseagreen;
     height: 60px;
     justify-content: end;
 }
@@ -37,6 +37,7 @@ nav
 
 .carta
 {
+    position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 14px;
     transition: transform 1s ;
@@ -59,10 +60,35 @@ p
     margin-bottom: 10px;
 }
 
-.carta:hover {
-    transform: rotateY(180deg);
+/* .carta .front {
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
 
 }
+
+.carta{
+    transform: perspective(600px) rotateY(0deg);
+
+}
+
+.carta .back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.carta:hover
+{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.carta:hover .back
+{
+    transform: perspective(600px) rotateY(360deg);
+} */
 
 .modificar
 {
