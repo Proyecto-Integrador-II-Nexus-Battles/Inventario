@@ -1,0 +1,107 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    margin-bottom: 50px;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    height: 60px;
+    justify-content: end;
+}
+
+.close 
+{ 
+    height: 50px;
+
+    position: relative;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+.carta
+{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 14px;
+    transition: transform 1s ;
+}
+
+.personajes
+{
+    height: 300px;
+    border-radius: 14px 14px 0 0 ;
+}
+
+.datos
+{
+    padding: 20px 0 10px 20px;
+    margin-bottom: 5px;
+}
+
+p
+{
+    margin-bottom: 10px;
+}
+
+.carta:hover {
+    transform: rotateY(180deg);
+
+}
+
+.modificar
+{
+    background-color: rgb(55, 242, 55);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    position: relative;
+    left: 190px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nueva_carta
+{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 14px;
+    /* background-color: rgb(120, 120, 120); */
+    
+}
+
+/* .fondo
+{
+    background-color: rgb(108, 108, 108);
+    height: 30vh;
+    position: relative;
+    left: 300px;
+    z-index: 1;
+} */
+
+.fondo img
+{
+    height: 100px;
+}
+
+/* .agregar
+{
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    right: px;
+} */
