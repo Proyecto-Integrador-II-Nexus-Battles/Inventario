@@ -1,119 +1,90 @@
-*
-{
-    padding: 0;
-    margin: 0;
+*   {
+  padding: 0;
+  margin: 0;
 }
 
-body
-{
-    margin-bottom: 50px;
+body {
+  margin-bottom: 50px;
 }
 
-nav
-{
-    display: flex;
-    flex-direction: row;
-    background-color: lightseagreen;
-    height: 60px;
-    justify-content: space-between;
-    padding: 10px;
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: lightseagreen;
+  height: 60px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.logo
-{
-    height: 100px;
+.logo {
+  height: 100px;
 }
 
-.close 
-{ 
-    height: 50px;
-    border: none;
-    width: 100px;
+.close {
+  height: 50px;
+  border: none;
+  width: 100px;
 }
 
-.container
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 5%;
-    flex-wrap: wrap;
+/* Estilos de las cartas/productos */
+.container_productos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+/* Carta */
+.card {
+  border: 1px solid #9e9e9e;
+  border-radius: 14px;
+  box-shadow: 0px 5px 5px rgba(39, 38, 38, 0.755);
+  transition: transform 0.3s ease;
 }
 
-.carta
-{
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    border-radius: 14px;
-    transition: transform 1s ;
+.imagen_carta {
+  width: 100%;
 }
 
-.personajes
-{
-    height: 300px;
-    border-radius: 14px 14px 0 0 ;
+.informacion_carta {
+  margin-left: 5px;
 }
 
-.datos
-{
-    padding: 20px 0 10px 20px;
-    margin-bottom: 5px;
+.informacion_carta p {
+  font-size: 22px;
+  font-weight: bold;
 }
 
-p
-{
-    margin-bottom: 10px;
+.informacion_carta .stats_card {
+  list-style: none;
+  margin-top: 5px;
 }
 
-/* .carta .front {
-    backface-visibility: hidden;
-    overflow: hidden;
-    transition: .5s;
-
+.stats_card li {
+  font-size: 19px;
+  margin-top: 1px;
 }
 
-.carta{
-    transform: perspective(600px) rotateY(0deg);
-
+.personaje {
+  height: 250px;
+  border-radius: 14px 14px 0 0;
 }
 
-.carta .back
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: perspective(600px) rotateY(180deg);
+.modificar {
+  background-color: rgb(55, 242, 55);
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 10px;
+  position: relative;
+  left: 190px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.carta:hover
-{
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.carta:hover .back
-{
-    transform: perspective(600px) rotateY(360deg);
-} */
-
-.modificar
-{
-    background-color: rgb(55, 242, 55);
-    border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    padding: 10px;
-    position: relative;
-    left: 190px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.nueva_carta
-{
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    border-radius: 14px;
-    /* background-color: rgb(120, 120, 120); */
-    
+.nueva_carta {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  width: 250px;
+  /* background-color: rgb(120, 120, 120); */
 }
 
 /* .fondo
@@ -125,9 +96,8 @@ p
     z-index: 1;
 } */
 
-.fondo img
-{
-    height: 100px;
+.fondo img {
+  height: 100px;
 }
 
 /* .agregar
