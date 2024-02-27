@@ -1,47 +1,78 @@
 *   {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  background-color: lightseagreen;
-  height: 60px;
-  justify-content: space-between;
-  padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: lightseagreen;
+    height: 60px;
+    justify-content: end;
+    padding: 10px;
 }
 
 .logo {
-  height: 100px;
+    height: 100px;
 }
 
 .close {
-  height: 50px;
-  border: none;
-  width: 100px;
+    height: 50px;
+    border: none;
+    width: 100px;
 }
 
 /* Estilos de las cartas/productos */
 .container_productos {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 /* Carta */
 .card {
     border: 1px solid #9e9e9e;
     border-radius: 14px;
-    box-shadow: 0px 5px 5px rgba(39, 38, 38, 0.755);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
     font-size: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.card-new
+{
+    border: 1px solid #9e9e9e;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+    font-size: 5px;
+    margin-bottom:20px;
+    background-color: #9e9e9ead;
+    cursor: pointer;
 }
 
+.card-new p
+{
+    color: rgba(0, 0, 0, 0.613);
+}
+
+.card-new img
+{
+    opacity: 0.5;
+}
+
+.agregar
+{
+    z-index: 1;
+    position: relative;
+    top: 190px;
+    left: 317px;
+    cursor: pointer;
+}
 
 
 .informacion_carta {
@@ -67,44 +98,68 @@ nav {
 {
     height: 160px;
     background-size: cover;
-    border-radius: 14px 14px 0 0;
+    border-radius: 13px 13px 0 0;
 }
 
 .modificar {
-  background-color: rgb(55, 242, 55);
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  padding: 10px;
-  position: relative;
-  left: 190px;
-  cursor: pointer;
-  border-radius: 5px;
+    background-color: rgb(55, 242, 55);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 80px;
 }
 
 .nueva_carta {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  border-radius: 14px;
-  width: 250px;
-  /* background-color: rgb(120, 120, 120); */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 14px;
+    width: 250px;
 }
 
-/* .fondo
+.front
+{   
+    height: 287px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 259px;
+    background-color: #9e9e9eb4;
+    border-radius: 13px;
+}
+.agregar
 {
-    background-color: rgb(108, 108, 108);
-    height: 30vh;
-    position: relative;
-    left: 300px;
-    z-index: 1;
-} */
-
-.fondo img {
-  height: 100px;
+    height: 50px;
 }
 
-/* .agregar
-{
-    height: 100px;
-    position: relative;
+.ventana {
+    display: none; 
     z-index: 1;
-    right: px;
-} */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .info {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    width: 50%;
+    height: 40%;
+  }
+  
+  .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
