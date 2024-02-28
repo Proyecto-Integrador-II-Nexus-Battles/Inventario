@@ -221,6 +221,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 .info 
 {
     text-align: center;
@@ -233,15 +234,15 @@ header {
     width: 50%;
     height: 30%;
     border-radius: 14px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .cerrar 
 {
     position: absolute;
-    top: 10px;
+    top:-12px;
     right: 10px;
-    font-size: 20px;
+    font-size: 3.2rem;
     cursor: pointer;
 }
 
@@ -254,38 +255,48 @@ header {
     margin-top: 100px;
 }
 
+.tipo a
+{
+    text-decoration: none;
+    color: black;
+}
+
 .heroe
 {
     cursor: pointer;
-    background-color: rgb(198, 198, 198);
+    background-color: #a3b7dc;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     width: 150px;
     height: 50px;
     padding-top: 20px;
+    border-radius: 10px;
 }
 
 .arma
 {
     cursor: pointer;
-    background-color: rgb(198, 198, 198);
+    background-color: #a3b7dc;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     width: 150px;
     height: 50px;
     padding-top: 20px;
+    border-radius: 10px;
 }
 
 .habilidad
 {
     cursor: pointer;
-    background-color: rgb(198, 198, 198);
+    background-color: #a3b7dc;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     width: 150px;
     height: 50px;
     padding-top: 20px;
+    border-radius: 10px;
 }
 
 .info_heroe 
 {
+
     text-align: center;
     position: absolute;
     top: 50%;
@@ -294,7 +305,102 @@ header {
     background-color: #fefefe;
     padding: 20px;
     width: 50%;
-    height: 50%;
+    height: 30%;
     border-radius: 14px;
     font-size: 30px;
+
 }
+
+.tipo_heroe
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.tipo_heroe button
+{
+    background-color: #a3b7dc;
+    border: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.info_item 
+{
+
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    width: 50%;
+    height: 30%;
+    border-radius: 14px;
+    font-size: 30px;
+
+}
+
+@media (width <= 1600px)
+    {
+
+        .card
+        {
+            width: 180px;
+            height: 310px;
+        }
+        .imagen_carta
+        {
+            width: 180px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .personaje 
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 13px 13px 0 0;
+        }
+
+        .informacion_carta p {
+            font-size: 10px;
+            font-weight: lighter;
+        }
+
+        .modificar {
+            background-color: #a3b7dc;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            padding: 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-bottom:10px;
+        }
+        
+        .container
+            {
+                padding-top: 10px;
+            }
+        .info
+        {
+            width: 40%;
+            height: 30%;
+            font-weight: lighter;
+        }
+        .tipo
+        {
+            margin-top: 70px;
+            font-size: 20px;
+        }
+    }

@@ -146,7 +146,7 @@
         </div>
         
         <!-- VENTANA FLOTANTE -->
-        <div id="tipocarta" class="ventana">pero 
+        <div id="tipocarta" class="ventana">
             <div class="info">
                 <p class="cerrar" onclick="cerrar()">&times;</p>
                 ¿Que tipo de carta quieres crear?
@@ -154,12 +154,12 @@
                     <p class="heroe" onclick="abrir_tipo()">
                         Heroe
                     </p>
-                    <p class="arma">
-                        Armas
-                    </p>
-                    <p class="habilidad">
+                    <a class="arma" onclick="abrir_tipo()">
+                        Item
+                    </a>
+                    <a class="habilidad" href="/HTML/creacion_habilidad.html">
                         Habilidad
-                    </p>
+                    </a>
                 </section>
             </div>
         </div>
@@ -167,16 +167,30 @@
             <div class="info_heroe">
                 <p class="cerrar" onclick="cerrar()">&times;</p>
                 ¿Qué tipo de héroe quieres crear?
-                <section class="tipo">
+                <section class="tipo_heroe">
                     <a class="guerrero" href="creacion_carta.html">
                         <button>Guerrero</button>
                     </a>
-                    <div class="mago">
+                    <a class="mago">
                         <button>Mago</button>
-                    </div>
-                    <div class="picaro">
-                        <button>Picaropero </button>
-                    </div>
+                    </a>
+                    <a class="picaro">
+                        <button>Picaro</button>
+                    </a>
+                </section>
+            </div>
+        </div>
+        <div id="tipoitem" class="ventana">
+            <div class="info_item">
+                <p class="cerrar" onclick="cerrar()">&times;</p>
+                ¿Qué tipo de item quieres crear?
+                <section class="tipo_heroe">
+                    <a class="guerrero" href="creacion_arma.html">
+                        <button>Arma</button>
+                    </a>
+                    <a class="mago">
+                        <button>Armadura</button>
+                    </a>
                 </section>
             </div>
         </div>
