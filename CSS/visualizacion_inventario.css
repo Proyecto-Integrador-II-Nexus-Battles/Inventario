@@ -5,17 +5,60 @@
 
 body {
     margin-bottom: 50px;
-    background-color: #ebc793;
+    background-color: #304C8B;
 }
-nav 
-{
+/* Estilos navbar */
+header {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #18233F;
+    margin-right: 9%;
+  }
+  
+  header .logo_img{
+  width: 70px;
+  }
+  
+  #navbar {
     height: 60px;
-    justify-content: end;
-    padding: 10px;
-    background-color: #80534e;
-}
+    background-color: #18233F;
+  }
+  
+  .opciones {
+    display: flex;
+    list-style: none;
+    padding-top: 9px;
+    gap: 2.2em;
+    margin-left: 10px;
+  }
+  
+  .opciones li {
+    display: inline-block;
+    padding-top: 9px;
+  }
+  
+  .opciones li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .opciones li button {
+    font-size: 24px;
+    height: 90%;
+    width: 110px;
+    cursor: pointer;
+    margin-right: 1%;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin-top: 2px;
+  }
+  
+  .abrir-btn{
+    display: none;
+  }
 
 .logo 
 {
@@ -46,6 +89,7 @@ nav
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
     margin-bottom: 20px;
+    background-color: white;
 
 }
 
@@ -241,8 +285,4 @@ nav
     height: 50%;
     border-radius: 14px;
     font-size: 30px;
-}
-
-.info_heroe button
-{
 }
