@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/visualizacion_inventario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-7STCx0n7m5CsBiP+9l/H8zjxU5A+8/7xjLffx4JU3H3NU1O9qmp3fx9Xi2yEZxjTVCEVRa+nkzPn4aJuebKfLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Inventario</title>
 </head>
 <body>
@@ -12,16 +13,17 @@
         <button class="close">Cerrar Sesión</button>
     </nav>
     <main>
-        <img class="agregar" src="../Imagenes/agregar.png" onclick="abrir()">
+        <!-- <img class="agregar" src="../Imagenes/agregar.png" onclick="abrir()"> -->
         <!-- Cartas -->
         <div class="container_productos">
             <!-- <div class="front">
                 <img class="agregar" src="../Imagenes/agregar.png" alt="">
             </div> -->
+            
             <div class="card-new" id="carta" onclick="abrir()">
                 <div class="imagen_carta">
                     <img src="../Imagenes/foto_en_bkanco.webp" class="personaje">
-                    
+                    <i class="fas fa-plus"></i>
                 </div>
                 <div class="informacion_carta">
                     <p>Nuevo Personaje</p>
@@ -110,19 +112,39 @@
                 </div>
             </div>
         </div>
+        <!-- VENTANA FLOTANTE -->
         <div id="tipocarta" class="ventana">
             <div class="info">
                 <p class="cerrar" onclick="cerrar()">&times;</p>
                 ¿Que tipo de carta quieres crear?
-                <div class="heroe">
-                    heroe
-                </div>
-                <div class="arma">
-                    Armas
-                </div>
-                <div class="habilidad">
-                    Habilidad
-                </div>
+                <section class="tipo">
+                    <p class="heroe" onclick="abrir_tipo()">
+                        heroe
+                    </p>
+                    <p class="arma">
+                        Armas
+                    </p>
+                    <p class="habilidad">
+                        Habilidad
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div id="tipoheroe" class="ventana">
+            <div class="info">
+                <p class="cerrar" onclick="cerrar()">&times;</p>
+                ¿Qué tipo de héroe quieres crear?
+                <section class="tipo">
+                    <a class="guerrero" href="creacion_carta.html">
+                        Guerrero
+                    </a>
+                    <p class="mago">
+                        Mago
+                    </p>
+                    <p class="habilidad">
+                        Picaro
+                    </p>
+                </section>
             </div>
         </div>
     </main>
