@@ -13,134 +13,137 @@
         <button class="close">Cerrar Sesión</button>
     </nav>
     <main>
-        <div class="container_productos">
-            <div class="card-new" id="carta" onclick="abrir()">
-                <div class="imagen_carta">
-                    <img src="../Imagenes/foto_en_bkanco.webp" class="personaje">
-                    <i class="fas fa-plus"></i>
-                </div>
-                <div class="informacion_carta">
-                    <p>Nuevo Personaje</p>
-                    <p>Poder</p>
-                    <p>Vida:</p>
-                    <p>Defensa:</p>
-                    <p>Ataque:</p>
-                    <p>Daño:</p>
-                </div>
-            </div>
-
-            <!-- /////////// -->
-            <div class="card">
-                <div class="imagen_carta">
-                    <img src="../Imagenes/Frostfang.jpg" class="personaje">
-                </div>
-                <div class="informacion_carta">
-                    <p>Cedric Cogswell</p>
-                    <p>Poder</p>
-                    <p>Vida:</p>
-                    <p>Defensa:</p>
-                    <p>Ataque:</p>
-                    <p>Daño:</p>
-                    <button class="modificar">Modificar</button>
-                </div>
-            </div>
-            <!-- ////////////// -->
-            <div class="card">
-                <div class="imagen_carta">
-                    <img src="../Imagenes/Zephyr Shadowblade.jpg" class="personaje">
-                </div>
-                <div class="informacion_carta">
-                    <p>Cedric Cogswell</p>
-                    <p>Poder</p>
-                    <p>Vida:</p>
-                    <p>Defensa:</p>
-                    <p>Ataque:</p>
-                    <p>Daño:</p>
-                    <button class="modificar">Modificar</button>
-                </div>
-            </div>        
-        </div>
-        <div class="container_productos">
-            <div class="card">
-                <div class="imagen_carta">
-                    <img src="../Imagenes/cedric.jpg" class="personaje">
-                </div>
-                <div class="informacion_carta">
-                    <p>Cedric Cogswell</p>
-                    <p>Poder</p>
-                    <p>Vida:</p>
-                    <p>Defensa:</p>
-                    <p>Ataque:</p>
-                    <p>Daño:</p>
-                    <button class="modificar">Modificar</button>
-                </div>
-            </div>
-            <!-- /////////// -->
-            <div class="card">
-                <div class="imagen_carta">
-                    <img src="../Imagenes/cedric.jpg" class="personaje">
-                </div>
-                <div class="informacion_carta">
-                    <p>Cedric Cogswell</p>
-                    <p>Poder</p>
-                    <p>Vida:</p>
-                    <p>Defensa:</p>
-                    <p>Ataque:</p>
-                    <p>Daño:</p>
-                    <button class="modificar">Modificar</button>
-                </div>
-            </div>
-            <!-- ////////////// -->
-            <div class="card">
-                <div class="imagen_carta">
-                    <img src="../Imagenes/cedric.jpg" class="personaje">
-                </div>
-                <div class="informacion_carta">
-                    <p>Cedric Cogswell</p>
-                    <p>Poder</p>
-                    <p>Vida:</p>
-                    <p>Defensa:</p>
-                    <p>Ataque:</p>
-                    <p>Daño:</p>
-                    <button class="modificar">Modificar</button>
-                </div>
-            </div>
-        </div>
-        <!-- VENTANA FLOTANTE -->
-        <div id="tipocarta" class="ventana">pero 
-            <div class="info">
-                <p class="cerrar" onclick="cerrar()">&times;</p>
-                ¿Que tipo de carta quieres crear?
-                <section class="tipo">
-                    <p class="heroe" onclick="abrir_tipo()">
-                        Heroe
-                    </p>
-                    <p class="arma">
-                        Armas
-                    </p>
-                    <p class="habilidad">
-                        Habilidad
-                    </p>
-                </section>
-            </div>
-        </div>
-        <div id="tipoheroe" class="ventana">
-            <div class="info_heroe">
-                <p class="cerrar" onclick="cerrar()">&times;</p>
-                ¿Qué tipo de héroe quieres crear?
-                <section class="tipo">
-                    <div class="guerrero" href="creacion_carta.html">
-                        <button>Guerrero</button>
+        <div class="container">
+            <div class="container_productos">
+                <div class="card-new" id="carta" onclick="abrir()">
+                    <div class="imagen_carta">
+                        <img src="../Imagenes/foto_en_bkanco.webp" class="personaje">
+                        <i class="fas fa-plus"></i>
                     </div>
-                    <div class="mago">
-                        <button>Mago</button>
+                    <div class="informacion_carta">
+                        <p>Nuevo Personaje</p>
+                        <p>Poder</p>
+                        <p>Vida:</p>
+                        <p>Defensa:</p>
+                        <p>Ataque:</p>
+                        <p>Daño:</p>
                     </div>
-                    <div class="picaro">
-                        <button>Picaropero </button>
+                </div>
+    
+                <!-- /////////// -->
+                <div class="card">
+                    <div class="imagen_carta">
+                        <img src="../Imagenes/Frostfang.jpg" class="personaje">
                     </div>
-                </section>
+                    <div class="informacion_carta">
+                        <p>Cedric Cogswell</p>
+                        <p>Poder</p>
+                        <p>Vida:</p>
+                        <p>Defensa:</p>
+                        <p>Ataque:</p>
+                        <p>Daño:</p>
+                        <button class="modificar">Modificar</button>
+                    </div>
+                </div>
+                <!-- ////////////// -->
+                <div class="card">
+                    <div class="imagen_carta">
+                        <img src="../Imagenes/Zephyr Shadowblade.jpg" class="personaje">
+                    </div>
+                    <div class="informacion_carta">
+                        <p>Cedric Cogswell</p>
+                        <p>Poder</p>
+                        <p>Vida:</p>
+                        <p>Defensa:</p>
+                        <p>Ataque:</p>
+                        <p>Daño:</p>
+                        <button class="modificar">Modificar</button>
+                    </div>
+                </div>        
+            </div>
+            <div class="container_productos">
+                <div class="card">
+                    <div class="imagen_carta">
+                        <img src="../Imagenes/cedric.jpg" class="personaje">
+                    </div>
+                    <div class="informacion_carta">
+                        <p>Cedric Cogswell</p>
+                        <p>Poder</p>
+                        <p>Vida:</p>
+                        <p>Defensa:</p>
+                        <p>Ataque:</p>
+                        <p>Daño:</p>
+                        <button class="modificar">Modificar</button>
+                    </div>
+                </div>
+                <!-- /////////// -->
+                <div class="card">
+                    <div class="imagen_carta">
+                        <img src="../Imagenes/cedric.jpg" class="personaje">
+                    </div>
+                    <div class="informacion_carta">
+                        <p>Cedric Cogswell</p>
+                        <p>Poder</p>
+                        <p>Vida:</p>
+                        <p>Defensa:</p>
+                        <p>Ataque:</p>
+                        <p>Daño:</p>
+                        <button class="modificar">Modificar</button>
+                    </div>
+                </div>
+                <!-- ////////////// -->
+                <div class="card">
+                    <div class="imagen_carta">
+                        <img src="../Imagenes/cedric.jpg" class="personaje">
+                    </div>
+                    <div class="informacion_carta">
+                        <p>Cedric Cogswell</p>
+                        <p>Poder</p>
+                        <p>Vida:</p>
+                        <p>Defensa:</p>
+                        <p>Ataque:</p>
+                        <p>Daño:</p>
+                        <button class="modificar">Modificar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- VENTANA FLOTANTE -->
+            <div id="tipocarta" class="ventana">pero 
+                <div class="info">
+                    <p class="cerrar" onclick="cerrar()">&times;</p>
+                    ¿Que tipo de carta quieres crear?
+                    <section class="tipo">
+                        <p class="heroe" onclick="abrir_tipo()">
+                            Heroe
+                        </p>
+                        <p class="arma">
+                            Armas
+                        </p>
+                        <p class="habilidad">
+                            Habilidad
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div id="tipoheroe" class="ventana">
+                <div class="info_heroe">
+                    <p class="cerrar" onclick="cerrar()">&times;</p>
+                    ¿Qué tipo de héroe quieres crear?
+                    <section class="tipo">
+                        <div class="guerrero" href="creacion_carta.html">
+                            <a href="../HTML/creacion_carta.html">Guerrero</a>
+                        </div>
+                        <div class="mago">
+                            <button>Mago</button>
+                        </div>
+                        <div class="picaro">
+                            <button>Picaropero </button>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
+        
     </main>
     <script src="../JS/visualizacion.js"></script>
 </body>

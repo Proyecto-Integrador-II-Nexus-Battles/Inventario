@@ -5,13 +5,14 @@
 
 body {
     margin-bottom: 50px;
+    background-color: #be684f;
 }
 
 nav 
 {
     display: flex;
     flex-direction: row;
-    background-color: lightseagreen;
+    background-color: #80534e;
     height: 60px;
     justify-content: end;
     padding: 10px;
@@ -29,13 +30,14 @@ nav
     width: 100px;
 }
 
+
 .container_productos 
 {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 50px;
+    padding-top: 50px;
     font-size: 1px;
 }
 /* Carta */
@@ -46,6 +48,7 @@ nav
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
     margin-bottom: 20px;
+    background-color: white;
 }
 
 .card p
@@ -242,6 +245,3 @@ nav
     font-size: 30px;
 }
 
-.info_heroe button
-{
-}
