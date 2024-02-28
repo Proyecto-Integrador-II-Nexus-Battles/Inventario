@@ -48,7 +48,7 @@ header {
   .opciones li button {
     font-size: 24px;
     height: 90%;
-    width: 110px;
+    width: 200px;
     cursor: pointer;
     margin-right: 1%;
     border-radius: 10px;
@@ -60,10 +60,6 @@ header {
   .abrir-btn{
     display: none;
   }
-
-.logo {
-    height: 100px;
-}
 
 .logo {
     height: 100px;
@@ -81,12 +77,13 @@ header {
     justify-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 2rem;
     background-color: #A3B7DC;
     padding-top: 4rem;
     padding-bottom: 4rem;
     margin-left: 10rem;
     margin-right: 10rem;
+    box-shadow: 0 5px 25px rgb(0, 0, 1);
 }
 /* Carta */
 .card {
@@ -102,11 +99,31 @@ header {
 
 .informacion_carta {
     margin-left: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .informacion_carta p {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
+}
+
+#nombre
+{
+    font-weight: bolder;
+}
+
+.nombre
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.nombre input
+{
+    border: transparent;
+    padding-left: 5px;
 }
 
 .informacion_carta .stats_card {
@@ -117,6 +134,12 @@ header {
 .stats_card li {
     font-size: 19px;
     margin-top: 1px;
+}
+
+.imagen_carta
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .personaje 
@@ -134,7 +157,7 @@ header {
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 330px;
+    margin-left: 296px;
 }
 .guardar-cambios {
     font-size: 1.5rem;
@@ -150,16 +173,4 @@ header {
     left: 69%;
     transform: translateX(-50%);
     margin-bottom: -25px;
-}
-
-h2{
-    font-size: 2rem;
-    margin: 1rem;
-}
-
-h3{
-    font-size: 16px;
-    margin-left: 1rem;
-    margin-right:1rem ;
-    margin-bottom: 58.2%;
 }
