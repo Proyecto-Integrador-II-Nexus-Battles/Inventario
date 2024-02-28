@@ -13,13 +13,7 @@
         <button class="close">Cerrar Sesión</button>
     </nav>
     <main>
-        <!-- <img class="agregar" src="../Imagenes/agregar.png" onclick="abrir()"> -->
-        <!-- Cartas -->
         <div class="container_productos">
-            <!-- <div class="front">
-                <img class="agregar" src="../Imagenes/agregar.png" alt="">
-            </div> -->
-            
             <div class="card-new" id="carta" onclick="abrir()">
                 <div class="imagen_carta">
                     <img src="../Imagenes/foto_en_bkanco.webp" class="personaje">
@@ -119,7 +113,7 @@
                 ¿Que tipo de carta quieres crear?
                 <section class="tipo">
                     <p class="heroe" onclick="abrir_tipo()">
-                        heroe
+                        Heroe
                     </p>
                     <p class="arma">
                         Armas
@@ -131,19 +125,19 @@
             </div>
         </div>
         <div id="tipoheroe" class="ventana">
-            <div class="info">
+            <div class="info_heroe">
                 <p class="cerrar" onclick="cerrar()">&times;</p>
                 ¿Qué tipo de héroe quieres crear?
                 <section class="tipo">
-                    <a class="guerrero" href="creacion_carta.html">
-                        Guerrero
-                    </a>
-                    <p class="mago">
-                        Mago
-                    </p>
-                    <p class="habilidad">
-                        Picaro
-                    </p>
+                    <div class="guerrero" href="creacion_carta.html">
+                        <button>Guerrero</button>
+                    </div>
+                    <div class="mago">
+                        <button>Mago</button>
+                    </div>
+                    <div class="picaro">
+                        <button>Picaro</button>
+                    </div>
                 </section>
             </div>
         </div>
