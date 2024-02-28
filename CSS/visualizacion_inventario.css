@@ -33,6 +33,8 @@ nav {
     justify-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 1px;
 }
 /* Carta */
 .card {
@@ -40,7 +42,6 @@ nav {
     border-radius: 14px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
-    font-size: 5px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     background-color: white;
@@ -51,10 +52,10 @@ nav {
     border-radius: 14px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
-    font-size: 5px;
     margin-bottom:20px;
     background-color: #9e9e9ead;
     cursor: pointer;
+    position: relative;
 }
 
 .card-new p
@@ -62,17 +63,22 @@ nav {
     color: rgba(0, 0, 0, 0.613);
 }
 
+.card-new .imagen_carta {
+    position: relative;
+  }
+
 .card-new img
 {
     opacity: 0.5;
+    position: relative;
 }
+
 
 .agregar
 {
+    height: 50px;
     z-index: 1;
     position: relative;
-    top: 190px;
-    left: 317px;
     cursor: pointer;
 }
 
@@ -96,10 +102,18 @@ nav {
     margin-top: 1px;
 }
 
+.imagen_carta
+{
+    width: 210px; /* ajusta el ancho según tus necesidades */
+  height: 150px; /* ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
 .personaje 
 {
-    height: 160px;
-    background-size: cover;
+    width: 100%;
+  height: auto;
+  display: block;
     border-radius: 13px 13px 0 0;
 }
 
@@ -110,7 +124,7 @@ nav {
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 80px;
+    margin-left: 68px;
 }
 
 .nueva_carta {
@@ -130,10 +144,7 @@ nav {
     background-color: #9e9e9eb4;
     border-radius: 13px;
 }
-.agregar
-{
-    height: 50px;
-}
+
 
 .ventana {
     display: none; 
@@ -156,6 +167,7 @@ nav {
     padding: 20px;
     width: 50%;
     height: 40%;
+    border-radius: 14px;
   }
   
   .cerrar {
@@ -165,3 +177,67 @@ nav {
     font-size: 20px;
     cursor: pointer;
   }
+
+.tipo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around  ;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.heroe
+{
+    cursor: pointer;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+}
+
+.arma
+{
+    cursor: pointer;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+}
+
+.habilidad
+{
+    cursor: pointer;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+}
+
+.guerrero
+{
+    cursor: pointer;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.mago
+{
+    cursor: pointer;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+}
+
+.picaro
+{
+    cursor: pointer;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+}
