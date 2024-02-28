@@ -5,16 +5,17 @@
 
 body {
     margin-bottom: 50px;
+    background-color: #ebc793;
 }
 
 nav 
 {
     display: flex;
     flex-direction: row;
-    background-color: lightseagreen;
     height: 60px;
     justify-content: end;
     padding: 10px;
+    background-color: #80534e;
 }
 
 .logo 
@@ -46,6 +47,7 @@ nav
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease;
     margin-bottom: 20px;
+
 }
 
 .card p
@@ -124,7 +126,7 @@ nav
 }
 
 .modificar {
-    background-color: rgb(55, 242, 55);
+    background-color: #a3b7dc;
     border: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     padding: 5px;

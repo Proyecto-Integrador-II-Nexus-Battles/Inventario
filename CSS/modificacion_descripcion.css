@@ -1,0 +1,117 @@
+*   {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-bottom: 50px;
+    background-color: #ebc793;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: end;
+    padding: 10px;
+    background-color: #80534e;
+}
+
+.logo {
+    height: 100px;
+}
+
+.close {
+    height: 50px;
+    border: none;
+    width: 100px;
+}
+
+/* Estilos de las cartas/productos */
+.container_productos {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    background-color: #be684f;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+/* Carta */
+.card {
+    border: 1px solid #9e9e9e;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgb(0, 0, 0);
+    transition: transform 0.8s ease;
+    font-size: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.informacion_carta {
+    margin-left: 5px;
+}
+
+.informacion_carta p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.informacion_carta .stats_card {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.stats_card li {
+    font-size: 19px;
+    margin-top: 1px;
+}
+
+.personaje 
+{
+    height: 400px;
+    background-size: cover;
+    border-radius: 13px 13px 0 0;
+}
+
+.siguiente {
+    font-size: 1.2rem;
+    background-color: #a3b7dc;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 330px;
+}
+.guardar-cambios {
+    font-size: 1.5rem;
+    background-color: #789dca;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 310px;
+    position: absolute;
+    bottom: 4.5rem;
+    left: 69%;
+    transform: translateX(-50%);
+    margin-bottom: -25px;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+h3{
+    font-size: 16px;
+    margin-left: 1rem;
+    margin-right:1rem ;
+    margin-bottom: 58.2%;
+}
