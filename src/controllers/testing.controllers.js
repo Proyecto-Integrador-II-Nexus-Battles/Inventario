@@ -4,13 +4,13 @@ import { fileURLToPath } from "url";
 export const defaultR = (req, res) => {
   const datos = [
     {
-      nombre: "Home",
+      nombre: "Nuevo personaje",
       poder: "Hello World",
       vida: "si",
       defensa: "si",
       ataque: "si",
       dano: "si",
-      imagen: "/img/cedric.jpg",
+      imagen: "/Imagenes/foto_en_bkanco.webp",
     },
     {
       nombre: "Home",
@@ -19,7 +19,7 @@ export const defaultR = (req, res) => {
       defensa: "si",
       ataque: "si",
       dano: "si",
-      imagen: "/img/cedric.jpg",
+      imagen: "/Imagenes/cedric.jpg",
     },
     {
       nombre: "Home",
@@ -28,7 +28,7 @@ export const defaultR = (req, res) => {
       defensa: "si",
       ataque: "si",
       dano: "si",
-      imagen: "/img/cedric.jpg",
+      imagen: "/Imagenes/cedric.jpg",
     },
     {
       nombre: "Home",
@@ -37,7 +37,7 @@ export const defaultR = (req, res) => {
       defensa: "si",
       ataque: "si",
       dano: "si",
-      imagen: "/img/cedric.jpg",
+      imagen: "/Imagenes/cedric.jpg",
     },
     {
       nombre: "Home",
@@ -46,7 +46,7 @@ export const defaultR = (req, res) => {
       defensa: "si",
       ataque: "si",
       dano: "si",
-      imagen: "/img/cedric.jpg",
+      imagen: "/Imagenes/cedric.jpg"
     },
     {
       nombre: "Home",
@@ -55,7 +55,7 @@ export const defaultR = (req, res) => {
       defensa: "si",
       ataque: "si",
       dano: "si",
-      imagen: "/img/cedric.jpg",
+      imagen: "/Imagenes/cedric.jpg",
     },
   ];
   console.log(datos);

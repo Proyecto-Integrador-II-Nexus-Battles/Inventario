@@ -28,172 +28,97 @@
         </nav>
       </header>
     <main>
-        <div class="container">
-            <div class="container_productos">
+        <div class="conta">
+            <div class="container">
+                <div class="container_productos">
+                
+                    <!-- <div class="card-new" id="carta" onclick="abrir()">
+                        <div class="imagen_carta">
+                            <img src="../Imagenes/foto_en_bkanco.webp" class="personaje">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="informacion_carta">
+                            <p>Nuevo Personaje</p>
+                            <p>Poder</p>
+                            <p>Vida:</p>
+                            <p>Defensa:</p>
+                            <p>Ataque:</p>
+                            <p>Daño:</p>
+                        </div>
+                    </div> -->
+        
+                    <!-- /////////// -->
+                    <div class="container_productos">
+                        <% for (var i = 0; i < datos.length; i++) { %>
+                            
+                        <div class="card" >
+                          <div class="imagen_carta">
+                            <img src=<%= datos[i].imagen %> class="personaje">
+                          </div>
+                          <div class="informacion_carta">
+                            <p><%= datos[i].nombre %></p>
+                            <p>Poder: <%= datos[i].poder %></p>
+                            <p>Vida: <%= datos[i].vida %></p>
+                            <p>Defensa: <%= datos[i].defensa %></p>
+                            <p>Ataque: <%= datos[i].ataque %></p>
+                            <p>Daño: <%= datos[i].dano %></p>
+                            <button class="modificar">Modificar</button>
+                          </div>
+                        </div>
+                        <% } %>
+                      </div>
             
-                <div class="card-new" id="carta" onclick="abrir()">
-                    <div class="imagen_carta">
-                        <img src="../Imagenes/foto_en_bkanco.webp" class="personaje">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="informacion_carta">
-                        <p>Nuevo Personaje</p>
-                        <p>Poder</p>
-                        <p>Vida:</p>
-                        <p>Defensa:</p>
-                        <p>Ataque:</p>
-                        <p>Daño:</p>
-                    </div>
-                </div>
-    
-                <!-- /////////// -->
-                <div class="card" >
-                    <div class="imagen_carta" >
-                        <img src="../Imagenes/Frostfang.jpg" class="personaje" >
-                    </div>
-                    <div class="informacion_carta">
-                        <p>Frostfang</p>
-                        <p>Poder</p>
-                        <p>Vida:</p>
-                        <p>Defensa:</p>
-                        <p>Ataque:</p>
-                        <p>Daño:</p>
-                        <a href="modificacion_inventario.html">
-                            <button class="modificar">
-                                Modificar
-                            </button>
+            <!-- VENTANA FLOTANTE -->
+            <div id="tipocarta" class="ventana">
+                <div class="info">
+                    <p class="cerrar" onclick="cerrar()">&times;</p>
+                    ¿Que tipo de carta quieres crear?
+                    <section class="tipo">
+                        <button class="heroe" onclick="a()">
+                            Heroe
+                        </button>
+                        <a class="arma" onclick="abrir_tipo()">
+                            Item
                         </a>
-                    </div>
-                </div>
-                <!-- ////////////// -->
-                <div class="card">
-                    <div class="imagen_carta">
-                        <img src="../Imagenes/Zephyr Shadowblade.jpg" class="personaje">
-                    </div>
-                    <div class="informacion_carta">
-                        <p><b>Zephyr Shadowblade</b></p>
-                        <p>Poder</p>
-                        <p>Vida:</p>
-                        <p>Defensa:</p>
-                        <p>Ataque:</p>
-                        <p>Daño:</p>
-                        <a href="modificacion_inventario.html">
-                            <button class="modificar">
-                                Modificar
-                            </button>
+                        <a class="habilidad" href="/HTML/creacion_habilidad.html">
+                            Habilidad
                         </a>
-                    </div>
-                </div>        
+                    </section>
+                </div>
             </div>
-            <div class="container_productos">
-                <div class="card">
-                    <div class="imagen_carta">
-                        <img src="../Imagenes/cedric.jpg" class="personaje">
-                    </div>
-                    <div class="informacion_carta">
-                        <p>Cedric Cogswell</p>
-                        <p>Poder</p>
-                        <p>Vida:</p>
-                        <p>Defensa:</p>
-                        <p>Ataque:</p>
-                        <p>Daño:</p>
-                        <a href="modificacion_inventario.html">
-                            <button class="modificar">
-                                Modificar
-                            </button>
+            <div id="tipoheroe" class="ventana">
+                <div class="info_heroe">
+                    <p class="cerrar" onclick="cerrar()">&times;</p>
+                    ¿Qué tipo de héroe quieres crear?
+                    <section class="tipo_heroe">
+                        <a class="guerrero" href="creacion_carta.html">
+                            <button>Guerrero</button>
                         </a>
-                    </div>
+                        <a class="mago">
+                            <button>Mago</button>
+                        </a>
+                        <a class="picaro">
+                            <button>Picaro</button>
+                        </a>
+                    </section>
                 </div>
-                <!-- /////////// -->
-                <div class="card">
-                    <div class="imagen_carta">
-                        <img src="../Imagenes/silueta_heroe.jpg" class="personaje">
-                    </div>
-                    <div class="informacion_carta">
-                        <p>Victor Steamblade</p>
-                        <p>Poder</p>
-                        <p>Vida:</p>
-                        <p>Defensa:</p>
-                        <p>Ataque:</p>
-                        <p>Daño:</p>
-                        <a href="modificacion_inventario.html">
-                            <button class="modificar">
-                                Modificar
-                            </button>
+            </div>
+            <div id="tipoitem" class="ventana">
+                <div class="info_item">
+                    <p class="cerrar" onclick="cerrar()">&times;</p>
+                    ¿Qué tipo de item quieres crear?
+                    <section class="tipo_heroe">
+                        <a class="guerrero" href="creacion_arma.html">
+                            <button>Arma</button>
                         </a>
-                    </div>
-                </div>
-                <!-- ////////////// -->
-                <div class="card">
-                    <div class="imagen_carta">
-                        <img src="../Imagenes/picaro_silueta.jpg" class="personaje">
-                    </div>
-                    <div class="informacion_carta">
-                        <p>Orlin Cuchilla Solar</p>
-                        <p>Poder</p>
-                        <p>Vida:</p>
-                        <p>Defensa:</p>
-                        <p>Ataque:</p>
-                        <p>Daño:</p>
-                        <a href="modificacion_inventario.html">
-                            <button class="modificar">
-                                Modificar
-                            </button>
+                        <a class="mago">
+                            <button>Armadura</button>
                         </a>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
         
-        <!-- VENTANA FLOTANTE -->
-        <div id="tipocarta" class="ventana">
-            <div class="info">
-                <p class="cerrar" onclick="cerrar()">&times;</p>
-                ¿Que tipo de carta quieres crear?
-                <section class="tipo">
-                    <button class="heroe" onclick="a()">
-                        Heroe
-                    </button>
-                    <a class="arma" onclick="abrir_tipo()">
-                        Item
-                    </a>
-                    <a class="habilidad" href="/HTML/creacion_habilidad.html">
-                        Habilidad
-                    </a>
-                </section>
-            </div>
-        </div>
-        <div id="tipoheroe" class="ventana">
-            <div class="info_heroe">
-                <p class="cerrar" onclick="cerrar()">&times;</p>
-                ¿Qué tipo de héroe quieres crear?
-                <section class="tipo_heroe">
-                    <a class="guerrero" href="creacion_carta.html">
-                        <button>Guerrero</button>
-                    </a>
-                    <a class="mago">
-                        <button>Mago</button>
-                    </a>
-                    <a class="picaro">
-                        <button>Picaro</button>
-                    </a>
-                </section>
-            </div>
-        </div>
-        <div id="tipoitem" class="ventana">
-            <div class="info_item">
-                <p class="cerrar" onclick="cerrar()">&times;</p>
-                ¿Qué tipo de item quieres crear?
-                <section class="tipo_heroe">
-                    <a class="guerrero" href="creacion_arma.html">
-                        <button>Arma</button>
-                    </a>
-                    <a class="mago">
-                        <button>Armadura</button>
-                    </a>
-                </section>
-            </div>
-        </div>
     </main>
     <script src="../JS/visualizacion.js"></script>
     <script src="../JS/vistaCrea.js"></script>
