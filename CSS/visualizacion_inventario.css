@@ -404,3 +404,218 @@ header {
             font-size: 20px;
         }
     }
+
+    @media (width <= 1366px)
+    {
+
+        .card
+        {
+            width: 150px;
+            height: 250px;
+        }
+        .imagen_carta
+        {
+            width: 150px;
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .personaje 
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 13px 13px 0 0;
+        }
+
+        .informacion_carta p {
+            font-size: 10px;
+            font-weight: lighter;
+            margin: 5px;
+        }
+
+        .modificar {
+            background-color: #a3b7dc;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            padding: 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-bottom:10px;
+        }
+        
+        .container
+            {
+                padding-top: 10px;
+            }
+        .info
+        {
+            width: 40%;
+            height: 30%;
+            font-weight: lighter;
+        }
+        .tipo
+        {
+            margin-top: 70px;
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (min-width:1280px)
+    {
+
+        .opciones li a 
+        {
+            font-size: 20px;
+          }
+          
+          .opciones li button {
+
+            font-size: 20px;
+          }
+
+          .container
+          {
+            margin-top: 20px;
+          }
+        .container_productos 
+        {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            font-size: 1px;
+
+        }
+        .card
+        {
+            width: 200px;
+            height: 350px;
+        }
+        .imagen_carta
+        {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .personaje 
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 13px 13px 0 0;
+        }
+
+        .informacion_carta p {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .modificar {
+            background-color: #a3b7dc;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            padding: 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-bottom:10px;
+        }
+        
+        .container
+            {
+                padding-top: 10px;
+            }
+        .info
+        {
+            width: 40%;
+            height: 30%;
+            font-weight: lighter;
+        }
+        .tipo
+        {
+            margin-top: 70px;
+            font-size: 20px;
+        }
+    }
+    
+    /* @media screen and (min-width:1280px  min-height:960px ) {
+        .opciones li a 
+        {
+            font-size: 20px;
+          }
+          
+          .opciones li button {
+
+            font-size: 20px;
+          }
+
+          .container
+          {
+            margin-top: 20px;
+          }
+        .container_productos 
+        {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            font-size: 1px;
+
+        }
+        .card
+        {
+            width: 200px;
+            height: 310px;
+        }
+        .imagen_carta
+        {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .personaje 
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 13px 13px 0 0;
+        }
+
+        .informacion_carta p {
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        .modificar {
+            background-color: #a3b7dc;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            padding: 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-bottom:10px;
+        }
+        
+        .container
+            {
+                padding-top: 10px;
+            }
+        .info
+        {
+            width: 40%;
+            height: 30%;
+            font-weight: lighter;
+        }
+        .tipo
+        {
+            margin-top: 70px;
+            font-size: 20px;
+        }
+    }
+    
+ */
