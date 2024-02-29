@@ -186,7 +186,6 @@ header {
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 160px;
     margin-bottom:10px;
 }
 
@@ -404,3 +403,9 @@ header {
             font-size: 20px;
         }
     }
+
+.botones{
+    display: flex;
+    gap: 5px;
+    margin-left: 6rem;
+}

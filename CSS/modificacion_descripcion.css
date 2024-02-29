@@ -135,7 +135,7 @@ header {
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 330px;
+    margin-left: 375px;
 }
 .guardar-cambios {
     font-size: 1.5rem;
@@ -147,7 +147,7 @@ header {
     border-radius: 5px;
     margin-left: 310px;
     position: absolute;
-    bottom: 4.5rem;
+    bottom: 1rem;
     left: 69%;
     transform: translateX(-50%);
     margin-bottom: -25px;

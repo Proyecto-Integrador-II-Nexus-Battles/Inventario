@@ -149,10 +149,55 @@ header {
     border-radius: 5px;
     margin-left: 310px;
     position: absolute;
-    bottom: 4.5rem;
+    bottom: 3rem;
     left: 69%;
     transform: translateX(-50%);
-    margin-bottom: -25px;
+    margin-bottom: -5.6rem;
+}
+.informacion_carta {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion_carta p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-weight: bold;
+}
+
+#nombre
+{
+    font-weight: bolder;
+}
+
+.nombre
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.nombre input
+{
+    border: transparent;
+    padding-left: 5px;
+}
+
+.informacion_carta .stats_card {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.stats_card li {
+    font-size: 19px;
+    margin-top: 1px;
+}
+
+.imagen_carta
+{
+    display: flex;
+    flex-direction: column;
 }
 
 
