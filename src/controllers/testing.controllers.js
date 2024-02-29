@@ -62,7 +62,7 @@ export const defaultR = (req, res) => {
   res.render("visualizacion_inventario", { datos });
 };
 
-// export const defaultR2 = (req, res) => {
-//   res.render("visualizacion_inventario");
-// };
+export const defaultR2 = (req, res) => {
+  res.render("creacion_carta");
+};
 
