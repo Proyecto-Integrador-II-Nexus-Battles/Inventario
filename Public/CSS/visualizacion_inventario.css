@@ -7,7 +7,6 @@
 body {
     margin-bottom: 50px;
     background-color: #304C8B;
-    
 }
 /* Estilos navbar */
 header {
@@ -76,31 +75,22 @@ header {
 
 main
 {
-    height: 100vh;
+  margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.conta
-{
-    background-color: #A3B7DC;
-    margin-left:auto ;
-    margin-right: auto;
-    margin-top: 30px;
-    width: 65%;
-    padding-top: 30px;
-    border-radius: 14px;
-}
 
-.container
+/* .container
 {
-    width: 100%;
+    width: 100%
 }
 
 section {
+  display: flex;
     height: 800px;
-    width: 1000px;
+    width: 50%;
   }
   
   swiper-container {
@@ -117,7 +107,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 .container_productos 
 {
     display: flex;
@@ -125,6 +115,16 @@ section {
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-size: 1px;
+    background-color: #a3b7dc;
+    width: 80%;
+    padding-top: 80px;
+}
+.agregar
+{
+  width: 100px;
+  height: 50px;
+  z-index: 1;
+  position: relative;
 }
 /* Carta */
 .card {
@@ -135,6 +135,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 10px;
     margin-left: 7%;
+    margin-right: 7%;
     margin-bottom: 40px;
     background-color: white;
   }
@@ -143,7 +144,6 @@ section {
     border: 1px solid #9e9e9e;
     border-radius: 14px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    background: #fff;
     cursor: pointer;
   }
   
@@ -374,6 +374,8 @@ swiper-container {
 
   @media(width <=1360px)
     {
+
+
 
         .card
         {
