@@ -9,8 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="../HTML/visualizacion_inventario.html
-        "><img src="../Imagenes/logo_nb2_v2.png" class="logo_img" alt="" ></a>
+        <a><img src="../Imagenes/logo_nb2_v2.png" class="logo_img" alt="" ></a>
         
           <!-- Barra de navegación -->
         <img src="../Imagenes/hamburguesa_icon.svg" class="abrir-btn" alt="">
@@ -29,7 +28,7 @@
       </header>
     <main>
                     <div class="container_productos">
-                        <button class="agregar">Agregar Carta</button>
+                        <button class="agregar" onclick="a()">Agregar Carta</button>
                         <% for (var i = 0; i < datos.length; i++) { %>
                             
                         <div class="card" >
@@ -45,7 +44,7 @@
                             <p>Daño: <%= datos[i].dano %></p>
                             <div class="botones">
                                 <button class="modificar">Modificar</button>
-                                <button class="modficar">Suspender</button>
+                                <button class="modificar">Suspender</button>
                             </div>
                             
                           </div>

@@ -85,6 +85,7 @@ header {
     margin-left: 10rem;
     margin-right: 10rem;
     box-shadow: 0 5px 25px rgb(0, 0, 1);
+    border-radius: 14px;
 }
 /* Carta */
 .card {
@@ -96,6 +97,8 @@ header {
     margin-bottom: 20px;
     padding-bottom: 10px;
     background-color: white;
+    width: 350px;
+    height: 680px;
 }
 
 .informacion_carta {
@@ -131,7 +134,7 @@ header {
 {
     border: transparent;
     position: relative;
-    left: -50px;
+   
 }
 
 .informacion_carta .stats_card {
@@ -148,12 +151,14 @@ header {
 {
     display: flex;
     flex-direction: column;
+    width: 350px;
+    height: 350px;
+    
 }
 
 .personaje 
 {
-    height: 400px;
-    background-size: cover;
+    height: 100%;
     border-radius: 13px 13px 0 0;
 }
 
@@ -165,7 +170,8 @@ header {
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 296px;
+    margin-left: 250px;
+    margin-top: 10px;
 }
 .guardar-cambios {
     font-size: 1.5rem;
@@ -178,8 +184,8 @@ header {
     margin-left: 310px;
     position: absolute;
     bottom: 4.5rem;
-    left: 69%;
-    transform: translateX(-50%);
+    left: 60%;
+    bottom: 10%;
     margin-bottom: -25px;
 }
 
@@ -187,61 +193,180 @@ header {
 @media screen and (max-width:1680px)
 {
 
-.container_productos {
 
-}
 /* Carta */
 .card {
-    width: 300px;
-
-}
-
-.informacion_carta {
-
+    height: 620px;
 }
 
 .informacion_carta p {
-    font-size: 15px;
+
+    font-size: 10px;
+}
+
+.guardar-cambios {
+    bottom: 15%;
+}
 
 }
 
-#nombre
+@media screen and (max-width:1600px)
 {
 
+.container_productos {
+    height: 540px;
 }
-
-.nombre
-{
-
-}
-
-.nombre input
-{
-
-}
-
-.nombre select
-{
-
+/* Carta */
+.card {
+    height: 540px;
+    width: 310px;
 }
 
 
+
+.informacion_carta p {
+
+    font-size: 10px;
+}
 .imagen_carta
 {
-
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 290px;
+    
 }
 
 .personaje 
-{   
-    width: 300px;
-    height: 300px;
+{
+    height: 100%;
+    border-radius: 13px 13px 0 0;
 }
 
 .siguiente {
-
+    font-size: 15px;
+    margin-left: 218px;
 }
 .guardar-cambios {
-
+    font-size:15px ;
+    bottom: 11%;
 }
 
 }
+
+@media screen and (max-width:1440px)
+{
+
+.guardar-cambios {
+    font-size:15px ;
+    bottom: 11%;
+    left: 58%;
+}
+
+@media screen and (max-width:1360px)
+{
+
+.container_productos {
+
+    height: 400px;
+}
+/* Carta */
+.card {
+    margin-top: -50px;
+    height: 540px;
+    width: 230px;
+}
+
+
+
+.informacion_carta p {
+
+    font-size: 10px;
+}
+.imagen_carta
+{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 200px;
+    
+}
+
+.personaje 
+{
+    height: 100%;
+    border-radius: 13px 13px 0 0;
+}
+
+input select
+{
+    
+}
+
+.siguiente {
+    font-size: 15px;
+    margin-left: 218px;
+}
+.guardar-cambios {
+    font-size:15px ;
+    bottom: 11%;
+}
+
+}
+
+}
+@media screen and (max-width: 1224px)  {
+
+    .abrir-btn {
+      display: block;
+      margin-left: 80%;
+      height: 5vh;
+      padding-top: 15px;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  
+    .opciones {
+      flex-direction: column;
+      align-items: end;
+      color: black;
+    }
+  
+    .opciones li {
+      margin-top: 2px;
+    }
+  
+    .opciones li button {
+      width: 100px;
+    }
+  
+    #navbar {
+      position: absolute;
+      top: 9.7%;
+      right: 0;
+      background-color: #D8E9F9;
+      padding: 1.2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin-right: 0;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+    }
+  
+    #navbar.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    /* carta */
+    .container_productos{
+      margin-left: 40px;
+      margin-right: 20px;
+    }
+    .barra_busqueda .search_input{
+      margin-left: 60px;
+      }
+  }
+  
