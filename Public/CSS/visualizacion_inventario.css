@@ -7,6 +7,7 @@
 body {
     margin-bottom: 50px;
     background-color: #304C8B;
+    
 }
 /* Estilos navbar */
 header {
@@ -73,6 +74,14 @@ header {
     width: 100px;
 }
 
+main
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .conta
 {
     background-color: #A3B7DC;
@@ -89,6 +98,26 @@ header {
     width: 100%;
 }
 
+section {
+    height: 800px;
+    width: 1000px;
+  }
+  
+  swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: calc((100% - 30px) / 2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .container_productos 
 {
     display: flex;
@@ -109,42 +138,19 @@ header {
     margin-bottom: 40px;
     background-color: white;
   }
-  .card-new
-  {
+
+  .card_new {
     border: 1px solid #9e9e9e;
     border-radius: 14px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    transition: transform 0.3s ease;
-    margin-bottom:20px;
-    background-color: #9e9e9ead;
+    background: #fff;
     cursor: pointer;
-    position: relative;
   }
   
-  .card-new p
-  {
-    color: rgba(0, 0, 0, 0.613);
-  }
-  
-  .card-new .imagen_carta {
-    position: relative;
-  }
-  
-  .card-new img
-  {
+  .card_new img {
     opacity: 0.5;
     position: relative;
   }
-  
-  
-  .agregar
-  {
-    height: 50px;
-    z-index: 1;
-    position: relative;
-    cursor: pointer;
-  }
-  
   
   .informacion_carta {
     margin-left: 5px;
@@ -152,7 +158,7 @@ header {
   
   .informacion_carta p {
     font-size: 18px;
-
+  
   }
   
   .informacion_carta .stats_card {
@@ -165,18 +171,16 @@ header {
     margin-top: 1px;
   }
   
-  .imagen_carta
-  {
+  
+  .imagen_carta {
     width: 250px;
     height: 180px;
     overflow: hidden;
   }
   
-  .personaje
-  {
+  .personaje {
     width: 100%;
-  height: auto;
-  display: block;
+    height: auto;
     border-radius: 13px 13px 0 0;
   }
 
@@ -425,3 +429,118 @@ swiper-container {
             font-size: 20px;
         }
     }
+
+    @media screen and (max-width: 1484px) {
+
+        .card
+        {
+            width: 190px;
+            height: 315px;
+        }
+        .imagen_carta
+        {
+            width: 190px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .personaje 
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 13px 13px 0 0;
+        }
+
+        .informacion_carta p {
+            font-size:14px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .modificar {
+            background-color: #a3b7dc;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            padding: 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 80px;
+            margin-bottom:10px;
+            font-size: 11px;
+        }
+        
+        .container
+            {
+                padding-top: 10px;
+            }
+        .info
+        {
+            width: 40%;
+            height: 30%;
+            font-weight: lighter;
+        }
+        .tipo
+        {
+            margin-top: 70px;
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1320px) {
+
+        .opciones{
+            font-size: 9px;
+        }
+    }   
+
+    
+    @media screen and (max-width: 1187px) {
+
+        .opciones{
+            font-size: 5px;
+        }
+    }   
+
+    @media screen and (max-width: 1285px) {
+
+        .opciones{
+            font-size: 1px;
+           gap: 20px;
+        }
+    }   
+
+    @media screen and (max-width: 1207px) {
+        .abrir-btn {
+          display: block;
+          margin-left: 80%;
+        height: 5vh;
+        padding-top: 15px;
+        cursor: pointer;
+        margin-right: 20px;
+        }
+  
+        #navbar {
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          display: none;
+        }
+  
+        .opciones {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+        }
+  
+        .opciones li {
+          margin: 10px 0;
+        }
+  
+        .abrir-btn {
+          display: block;
+        }
+      }
