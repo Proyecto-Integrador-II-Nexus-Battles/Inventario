@@ -238,6 +238,8 @@ header {
 }
 
 .siguiente {
+    margin-left: 210px;
+    font-size: 0.9rem;
 
 }
 .guardar-cambios {
