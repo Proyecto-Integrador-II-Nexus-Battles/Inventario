@@ -33,6 +33,7 @@ header {
     padding-top: 9px;
     gap: 2.2em;
     margin-left: 10px;
+    background-color: #18233F;
   }
   
   .opciones li {
@@ -263,17 +264,20 @@ header {
     left: 58%;
 }
 
-@media screen and (max-width:1360px)
+@media  (width <= 1280px)
 {
-
+    .opciones
+    {
+        font-size: 8px;
+    }
 .container_productos {
 
-    height: 400px;
+    height: 380px;
 }
 /* Carta */
 .card {
-    margin-top: -50px;
-    height: 540px;
+    margin-top: -30px;
+    height: 430px;
     width: 230px;
 }
 
@@ -298,23 +302,131 @@ header {
     border-radius: 13px 13px 0 0;
 }
 
-input select
+.opcion
 {
-    
+    width: 100px;
+    font-size: 10px;
 }
 
 .siguiente {
-    font-size: 15px;
-    margin-left: 218px;
+    font-size: 10px;
+    margin-left: 160px;
 }
 .guardar-cambios {
-    font-size:15px ;
+    font-size:10px;
+    bottom: 10%;
+    left: 55%;
+}
+
+}
+
+}
+@media  screen and (max-width:1152px)
+{
+
+.container_productos {
+
+    height: 460px;
+}
+/* Carta */
+.card {
+    margin-top: -30px;
+    height: 480px;
+    width: 280px;
+}
+
+
+
+.informacion_carta p {
+
+    font-size: 10px;
+}
+.imagen_carta
+{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 250px;
+    
+}
+
+.personaje 
+{
+    height: 100%;
+    border-radius: 13px 13px 0 0;
+}
+
+.opcion
+{
+    width: 100px;
+    font-size: 10px;
+}
+
+.siguiente {
+    font-size: 10px;
+    margin-left: 200px;
+}
+.guardar-cambios {
+    font-size:15px;
+    bottom: 17%;
+    left: 55%;
+}
+
+}
+
+@media  screen and (max-width:1024px)
+{
+
+.container_productos {
+
+    height: 420px;
+}
+/* Carta */
+.card {
+    margin-top: -30px;
+    height: 450px;
+    width: 230px;
+}
+
+
+
+.informacion_carta p {
+
+    font-size: 10px;
+}
+.imagen_carta
+{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 220px;
+    
+}
+
+.personaje 
+{
+    height: 100%;
+    border-radius: 13px 13px 0 0;
+}
+
+.opcion
+{
+    width: 100px;
+    font-size: 10px;
+}
+
+.siguiente {
+    font-size: 10px;
+    margin-left: 160px;
+}
+.guardar-cambios {
+    font-size:15px;
     bottom: 11%;
+    left: 53%;
 }
 
 }
 
-}
 @media screen and (max-width: 1224px)  {
 
     .abrir-btn {
@@ -360,13 +472,111 @@ input select
       opacity: 1;
       visibility: visible;
     }
-    /* carta */
-    .container_productos{
-      margin-left: 40px;
-      margin-right: 20px;
-    }
-    .barra_busqueda .search_input{
-      margin-left: 60px;
-      }
-  }
+
   
+
+  @media   (width <= 997px)
+{
+
+.container_productos {
+
+    height: 420px;
+}
+/* Carta */
+.card {
+    margin-top: -30px;
+    height: 450px;
+    width: 230px;
+}
+
+
+
+.informacion_carta p {
+
+    font-size: 10px;
+}
+.imagen_carta
+{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 220px;
+    
+}
+
+.personaje 
+{
+    height: 100%;
+    border-radius: 13px 13px 0 0;
+}
+
+.opcion
+{
+    width: 100px;
+    font-size: 10px;
+}
+
+.siguiente {
+    font-size: 10px;
+    margin-left: 160px;
+}
+.guardar-cambios {
+    font-size:15px;
+    bottom: 45%;
+    left: 50%;
+}
+}
+}
+
+@media   (width <= 874px)
+{
+
+
+.guardar-cambios {
+    font-size:15px;
+    bottom: 33%;
+    left: 5%;
+}
+}
+
+@media   screen and (max-width: 375px)
+{
+    header
+    {
+        width: 500px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+.container_productos
+{
+    width: 330px;
+    margin-left: 100px;
+}
+
+.imagen_carta
+{
+    width: 300px;
+    height: 300px;
+}
+.card
+{
+    height: 600px;
+    width: 680px;
+}
+.informacion_carta p
+{
+    font-size:20px;
+}
+.opcion
+{
+    font-size: 15px;
+    width: 50px;
+}
+.guardar-cambios {
+    font-size:15px;
+    bottom: 33%;
+    left: 5%;
+}
+}
+
