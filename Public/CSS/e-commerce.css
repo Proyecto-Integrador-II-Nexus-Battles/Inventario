@@ -4,7 +4,10 @@
 }
 
 body {
-  background-color: #304C8B;
+background-image: url('../Imagenes/fondo.png' ) ;
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -24,6 +27,7 @@ width: 70px;
 #navbar {
   height: 60px;
   background-color: #D8E9F9;
+  padding:10px;
 }
 
 .opciones {
@@ -64,7 +68,7 @@ width: 70px;
 /* Vitrina de productos */
 .container_general {
   width: 80%;
-  background-color: #A3B7DC;
+  
   margin-left: 2%;
   margin-right: 3%;
   margin-top: 20px;
@@ -83,8 +87,8 @@ main{
 /* Vitrina de productos */
 .container_productos {
   width: 50%;
-  background-color: #A3B7DC;
-  margin-top: 20px;
+  background:linear-gradient(45deg,#304b8b88, #a3b7dc7b, #d8e9f97b);
+  margin-top: 60px;
   padding-bottom: 30px;
   padding-top: 70px;
   border-radius: 14px;

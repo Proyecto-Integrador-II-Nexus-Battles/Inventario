@@ -211,7 +211,7 @@ export const defaultR = (req, res) => {
       imagen: "/Imagenes/cedric.jpg"
     },
     {
-      nombre: "Home",
+      nombre: "si",
       poder: "Hello World",
       vida: "si",
       defensa: "si",
